@@ -18,7 +18,7 @@ fi
 
 LICENSE="MIT"
 SLOT="0"
-IUSE="+hue +google +discovery +zeroconf +yahoo +nest"
+IUSE="+hue +google +discovery +zeroconf +yahoo +nest +samsung"
 
 DEPEND="${PYTHON_DEPS}
 	<dev-python/requests-3[${PYTHON_USEDEP}]
@@ -40,4 +40,5 @@ RDEPEND="${DEPEND}
 	)
 	yahoo? ( dev-python/yahooweather )
 	nest? ( dev-python/python-nest )
+	samsung? ( dev-python/samsungctl )
 "
