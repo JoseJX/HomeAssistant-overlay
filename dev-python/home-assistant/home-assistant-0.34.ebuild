@@ -18,7 +18,7 @@ fi
 
 LICENSE="MIT"
 SLOT="0"
-IUSE="+hue +google +discovery +zeroconf"
+IUSE="+hue +google +discovery +zeroconf +yahoo"
 
 DEPEND="${PYTHON_DEPS}
 	<dev-python/requests-3[${PYTHON_USEDEP}]
@@ -38,5 +38,5 @@ RDEPEND="${DEPEND}
 		dev-python/oauth2client 
 		dev-python/pychromecast
 	)
+	yahoo? ( dev-python/yahooweather )
 "
-#	yahoo? ( dev-python/yahooweather )
