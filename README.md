@@ -1,1 +1,1 @@
-I'm adding components as I can test them.
+This is a Gentoo overlay for HomeAssistant and it's associated components.
