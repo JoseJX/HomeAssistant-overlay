@@ -7,13 +7,14 @@ EAPI=6
 PYTHON_COMPAT=( python3_{4,5} )
 inherit distutils-r1
 
-DESCRIPTION="Python tools for interacting with IFTTT Maker Channel"
-HOMEPAGE="http://github.com/briandconnelly/pyfttt"
-SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz"
+DESCRIPTION="Calculates a token to run the Google Translate text to speech"
+HOMEPAGE="https://github.com/boudewijn26/gTTS-token"
+SRC_URI="mirror://pypi/${P:0:1}/${PN}/${P}.zip"
 
-LICENSE="BSD-2"
+
+LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="amd64"
 IUSE=""
 
 DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"

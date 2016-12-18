@@ -16,10 +16,11 @@ SLOT="0"
 KEYWORDS="amd64"
 IUSE=""
 
-DEPEND=""
-RDEPEND="${DEPEND}
-dev-python/requests
-dev-python/protobuf-python
-dev-python/zeroconf
-dev-python/six
+DEPEND="
+	dev-python/setuptools[${PYTHON_USEDEP}]
+	>=dev-python/requests-2.0[${PYTHON_USEDEP}]
+	>=dev-python/protobuf-python-3.0.0[${PYTHON_USEDEP}]
+	>=dev-python/zeroconf-0.17.4[${PYTHON_USEDEP}]
+	>=dev-python/six-1.10.0[${PYTHON_USEDEP}]
 "
+RDEPEND="${DEPEND}"

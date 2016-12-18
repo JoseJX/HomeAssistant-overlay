@@ -4,17 +4,21 @@
 
 EAPI=6
 
-PYTHON_COMPAT=( python3_{4,5} )
+PYTHON_COMPAT=( python2_7 python3_4 python3_5 )
 inherit distutils-r1
 
-DESCRIPTION="Python tools for interacting with IFTTT Maker Channel"
-HOMEPAGE="http://github.com/briandconnelly/pyfttt"
+DESCRIPTION="Fuzzy string matching in python"
+HOMEPAGE="https://github.com/seatgeek/fuzzywuzzy"
 SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz"
 
-LICENSE="BSD-2"
+LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64"
 IUSE=""
 
 DEPEND="dev-python/setuptools[${PYTHON_USEDEP}]"
-RDEPEND="${DEPEND}"
+RDEPEND=""
+
+python_test() {
+	"${PYTHON}" test_fuzzywuzzy.py || die "tests failed under ${EPYTHON}"
+}
